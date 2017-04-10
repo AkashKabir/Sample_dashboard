@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/extracard"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <RelativeLayout
+                    android:padding="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/floors2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:id="@+id/floors"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="FLOORS"
+                            android:textColor="#d50000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/distfloor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/floors"
+                            android:layout_alignBottom="@+id/floors"
+                            android:layout_toEndOf="@+id/floors"
+                            android:layout_toRightOf="@+id/floors"
+                            android:hint="loading"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/steps4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/floors2"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:id="@+id/Ste"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="STEPS"
+                            android:textColor="#d50000"
+
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/diststeps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/Ste"
+                            android:layout_alignBottom="@+id/Ste"
+                            android:layout_toEndOf="@+id/Ste"
+                            android:layout_toRightOf="@+id/Ste"
+                            android:hint="loading"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Ele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/steps4"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:id="@+id/ELeee"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="ELEVATION"
+
+                            android:textColor="#d50000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/distele"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/ELeee"
+                            android:layout_alignBottom="@+id/ELeee"
+                            android:layout_toEndOf="@+id/ELeee"
+                            android:layout_toRightOf="@+id/ELeee"
+                            android:hint="loading"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/calories"
+                android:layout_below="@+id/extracard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff8a80"
+                android:gravity="center"
+                android:text="CALORIES" />
+
+            <RelativeLayout
+                android:layout_margin="4dp"
+                android:layout_below="@+id/calories"
+                android:layout_height="wrap_content"
+                android:id="@+id/calsum"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:src="@drawable/cal"
+                    android:id="@+id/calimg"
+                    android:layout_height="48dp"
+                    android:layout_width="48dp"/>
+                <TextView
+                    android:id="@+id/caltext"
+                    android:layout_toRightOf="@+id/calimg"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="loading from network"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_below="@+id/calsum"
+                android:layout_width="match_parent"
+                android:id="@+id/caloriescard"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="6dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <RelativeLayout
+                android:id="@+id/calories2"
+                    android:padding="4dp"
+                    android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/CaloriesOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/CaloriesOut2"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="CALORIES OUT"
+                        android:textColor="#d50000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textsffd"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:hint="loading"
+                        android:layout_below="@+id/CaloriesOut2"
+                        android:textColor="#d50000"
+                        android:textSize="14dp"
+                        android:paddingStart="4dp"
+                        android:paddingLeft="4dp"
+                        android:layout_marginBottom="6dp"/>
+
+                    <ProgressBar
+                        android:id="@+id/CaloriesprogressBar2"
+                        style="@style/CustomProgressBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/CaloriesOut2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/subCalorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CaloriesOut"
+                    android:layout_margin="6dp"
+                    android:background="#bbdefb"
+                    android:padding="4dp">
+
+                    <RelativeLayout
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:id="@+id/distance2"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="#bbdefb"
+                            android:text="ACTIVITIES"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/distanceprogressBar"
+                            style="@style/CustomProgressBar"
+                            android:hint="loading"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/distance2" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Steps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/distance"
+                        android:background="#bbdefb">
+
+                        <TextView
+                            android:id="@+id/Steps2"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:background="#bbdefb"
+                            android:text="BMR"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:hint="loading"
+                            android:id="@+id/StepsprogressBar"
+                            style="@style/CustomProgressBar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/Steps2"
+                            android:progress="60" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/marginal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subCalorie">
+
+                    <TextView
+                        android:id="@+id/marginal2"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="MARGINAL"
+                        android:textColor="#d50000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:hint="loading"
+                        android:id="@+id/margCaloriesprogressBar"
+                        style="@style/CustomProgressBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/marginal2" />
+                </RelativeLayout>
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/distances"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/caloriescard"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/distances3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fbc02d"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:text="DISTANCES"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RelativeLayout
+                    android:layout_margin="4dp"
+                    android:layout_below="@+id/distances3"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dissum"
+                    android:layout_width="match_parent">
+                    <ImageView
+                        android:src="@drawable/dist"
+                        android:id="@+id/disimg"
+                        android:layout_height="48dp"
+                        android:layout_width="48dp"/>
+                    <TextView
+                        android:layout_marginLeft="7dp"
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@+id/disimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dissumtext"
+                        android:hint="loading from network"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/distancesRecycler"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dissum"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/minu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distances"
+                android:layout_marginTop="6dp"
+                android:background="#7cb342"
+                android:gravity="center"
+                android:text="MINUTES" />
+
+            <RelativeLayout
+                android:layout_margin="4dp"
+                android:layout_below="@+id/minu"
+                android:layout_height="wrap_content"
+                android:id="@+id/minsum"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:src="@drawable/min"
+                    android:id="@+id/minimg"
+                    android:layout_height="48dp"
+                    android:layout_width="48dp"/>
+                <TextView
+                    android:layout_toRightOf="@+id/minimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/minsumtext"
+                    android:hint="loading from network"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/mincard"
+                android:visibility="gone"
+                android:layout_below="@+id/minsum"
+                android:layout_width="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout
+                android:id="@+id/minutes"
+                android:padding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/fairly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:id="@+id/fa"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="FAIRLY ACTIVE"
+                        android:textColor="#d50000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/minfa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/fa"
+                        android:layout_alignBottom="@+id/fa"
+                        android:layout_toEndOf="@+id/fa"
+                        android:layout_toRightOf="@+id/fa"
+                        android:hint="loading"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lightly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fairly"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:id="@+id/lg"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="LIGHTLY ACTIVE"
+                        android:textColor="#d50000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/minla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lg"
+                        android:layout_alignBottom="@+id/lg"
+                        android:layout_toEndOf="@+id/lg"
+                        android:layout_toRightOf="@+id/lg"
+                        android:hint="loading"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lightly"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:id="@+id/se"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="SEDENTARY ACTIVE"
+                        android:textColor="#d50000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/minsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/se"
+                        android:layout_alignBottom="@+id/se"
+                        android:layout_toEndOf="@+id/se"
+                        android:layout_toRightOf="@+id/se"
+                        android:hint="loading"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/very"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seden"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:id="@+id/va"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="VERY ACTIVE"
+                        android:textColor="#d50000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/minva"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/va"
+                        android:layout_alignBottom="@+id/va"
+                        android:layout_toEndOf="@+id/va"
+                        android:layout_toRightOf="@+id/va"
+                        android:hint="loading"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+</ScrollView>

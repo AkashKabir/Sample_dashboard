@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:background="#000000"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="6dp"
+        android:src="@drawable/hr1"></ImageView>
+
+    <Button
+        android:id="@+id/dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#f08080"
+        android:text="GO TO DASHBOARD" />
+
+
+</LinearLayout>

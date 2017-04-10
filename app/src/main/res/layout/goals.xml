@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/CaloriesOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/CaloriesOut2"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="CALORIES OUT"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/CaloriesprogressBar"
+                style="@style/CustomProgressBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/CaloriesOut2"
+                android:hint="loading" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CaloriesOut">
+
+            <TextView
+
+                android:id="@+id/distance2"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="DISTANCE"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/distanceprogressBar"
+                style="@style/CustomProgressBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/distance2"
+                android:hint="loading" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/distance">
+
+            <TextView
+                android:id="@+id/Steps2"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="STEPS"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/StepsprogressBar"
+                style="@style/CustomProgressBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/Steps2"
+                android:hint="loading"
+                android:progress="60" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/floorssss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Steps">
+
+            <TextView
+                android:id="@+id/floooooor"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="FLOORS"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/floorprogressBar"
+                style="@style/CustomProgressBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/floooooor"
+                android:hint="loading"
+                android:progress="60" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

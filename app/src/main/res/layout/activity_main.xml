@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akitsme.deevesoft.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activitiesLayout">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:fontFamily="monospace"
+            android:text="ACTIVITIES"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/activitiestitle"
+            android:textAlignment="center"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="3dp"
+            android:layout_below="@+id/activitiestitle"
+            android:id="@+id/activities"
+            android:background="#ffffff"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_below="@+id/activitiesLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/GoalsLayout">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:fontFamily="monospace"
+        android:text="GOALS"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/goalstitle"
+        android:textAlignment="center"/>
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/goalsfrag"
+            android:name="com.akitsme.deevesoft.Fragments.GoalsFragment"
+            android:layout_below="@+id/goalstitle"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/GoalsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SummaryLayout">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fontFamily="monospace"
+            android:layout_margin="2dp"
+            android:text="SUMMARY"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/Summarytitle"
+            android:textAlignment="center"/>
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/summfrag"
+            android:name="com.akitsme.deevesoft.Fragments.SummaryFrag"
+            android:layout_below="@+id/Summarytitle"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SummaryLayout">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fontFamily="monospace"
+            android:text="WEIGHT"
+            android:layout_margin="2dp"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/weighttitle"
+            android:textAlignment="center"/>
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/weightfrag"
+            android:name="com.akitsme.deevesoft.Fragments.weight_fragment"
+            android:layout_below="@+id/weighttitle"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

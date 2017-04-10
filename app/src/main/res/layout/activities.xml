@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardBackgroundColor="#f4c2c2"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/act"
+
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        >
+
+        <TextView
+            android:id="@+id/nameee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f48fb1"
+            android:gravity="center"
+            android:text="here comes the name"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameee"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/fa"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="CALORIES"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/fa"
+                android:layout_alignBottom="@+id/fa"
+                android:layout_toEndOf="@+id/fa"
+                android:layout_toRightOf="@+id/fa"
+                android:text="value:"
+               android:id="@+id/valcal"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/lg"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="DESCRIPTION"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lg"
+                android:layout_alignBottom="@+id/lg"
+                android:layout_toEndOf="@+id/lg"
+                android:layout_toRightOf="@+id/lg"
+                android:text="floorno:"
+                android:id="@+id/valdes"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/des"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/se"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="DISTANCE"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/se"
+                android:layout_alignBottom="@+id/se"
+                android:layout_toEndOf="@+id/se"
+                android:layout_toRightOf="@+id/se"
+                android:text="floorno:"
+                android:id="@+id/valdis"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dis"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/da"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="DURATION"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/da"
+                android:layout_alignBottom="@+id/da"
+                android:layout_toEndOf="@+id/da"
+                android:layout_toRightOf="@+id/da"
+                android:text="floorno:"
+                android:id="@+id/valdur"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dur"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/s"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="START TIME"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/s"
+                android:layout_alignBottom="@+id/s"
+                android:layout_toEndOf="@+id/s"
+                android:layout_toRightOf="@+id/s"
+                android:text="floorno:"
+                android:id="@+id/valstart"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/stepp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/p"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="STEPS"
+                android:textColor="#d50000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/p"
+                android:layout_alignBottom="@+id/p"
+                android:layout_toEndOf="@+id/p"
+                android:layout_toRightOf="@+id/p"
+                android:text="floorno:"
+                android:id="@+id/valsteps"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <TextView
+            android:text="Swipe more for next Activity"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/stepp"
+            android:gravity="center"
+            android:id="@+id/status"
+            android:layout_marginTop="4dp"
+            android:background="#e8edb5"/>
+        </RelativeLayout>
+</android.support.v7.widget.CardView>
