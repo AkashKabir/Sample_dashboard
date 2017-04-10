@@ -3,5 +3,5 @@ Sample dashboard for a fitness app: just for future reference purposes and daily
 screencast:   https://drive.google.com/open?id=0B7ua27EMIDVfY3RJUWtWamlscUk
 
 # library used
-Volley
+Volley <br/>
 Storing json files on Firebase
